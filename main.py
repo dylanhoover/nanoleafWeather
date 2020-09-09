@@ -1,5 +1,8 @@
-###############################################
-# Created by: Dylan Hoover
+######################################################################
+# Created by: Dylan Hoover                                           #
+# Main file for nanoleaf weather                                     #
+# File requires nanoLeafControl.py and weatherInfo.py to function    #
+
 
 
 
@@ -53,6 +56,10 @@ class displayWeatherConditions():
     def rain(self):
         self.ctrl.rain()
         return
+    
+    def smoke(self):
+        self.ctrl.smoke()
+        return
 
     def switcher(self):
         if(condition == "Clear"):
@@ -63,6 +70,8 @@ class displayWeatherConditions():
             self.thunder()
         elif(condition == "Rain"):
             self.rain()
+        elif(condition == "Smoke"):
+            self.smoke()
         else:
             pass
         return

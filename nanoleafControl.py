@@ -30,6 +30,10 @@ class weatherControl():
         nl.set_effect("Clouds")
         return
 
+    @staticmethod
+    def smoke():
+        nl.set_effect("Smoke")
+        return
 
 class tempControl():
 
